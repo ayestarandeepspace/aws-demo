@@ -32,6 +32,8 @@ jobs:
 
         echo "Installing PM2..."
         if ! command -v pm2 &> /dev/null; then
+        apt install dnf
+        dnf install gcc
         npm install -g pm2
         fi
 
