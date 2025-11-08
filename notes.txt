@@ -1,0 +1,4 @@
+https://www.baeldung.com/ops/github-actions-deploy-ec2
+
+Install libatomic on host or won't work:
+apt-get install libatomic1
