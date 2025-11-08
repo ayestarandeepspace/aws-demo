@@ -15,6 +15,13 @@ app.get('/info', (req, res) => {
   });
 });
 
+app.get('/health-check', (req, res) => {
+  res.json({
+    status: 'success',
+    health: process.cpuUsage()
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
